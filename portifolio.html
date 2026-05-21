@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kauã Felipe | Full Stack Developer</title>
+  <link rel="stylesheet" href="portifolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">KF.</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#sobre" class="nav-link">About</a></li>
+      <li><a href="#habilidades" class="nav-link">Skills</a></li>
+      <li><a href="#projetos" class="nav-link">Projects</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon">☀️</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-photo-wrapper">
+        <div class="photo-ring"></div>
+        <div class="photo-ring photo-ring--2"></div>
+        <div class="hero-photo" id="heroPhoto">
+          <img src="imagem1.png" alt="Kauã Felipe" onerror="this.style.display='none'; document.getElementById('photoInitials').style.display='flex';" style="border-radius: 50%; margin-top:20%;" />
+          <div class="photo-initials" id="photoInitials">KF</div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-greeting">
+          <span class="greeting-line"></span>
+          Hello, world!
+        </p>
+
+        <h1 class="hero-name">
+          <span class="name-first reveal-word">Kauã Felipe</span><br />
+          <span class="name-last reveal-word">Gomes Medeiros.</span>
+        </h1>
+
+        <p class="hero-role">
+          <span class="role-badge">Full Stack Developer</span>
+        </p>
+
+        <p class="hero-bio">
+          Passionate about building complete digital experiences — from robust back-end systems to engaging front-end interfaces. I turn ideas into functional and modern solutions.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projetos" class="btn btn--primary">View Projects</a>
+          <a href="https://www.linkedin.com/in/kauafelipedev" class="btn btn--outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+   
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Who am I?</h2>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-text">
+
+          <p class="sobre-lead">
+            I am <strong>Kauã Felipe Gomes Medeiros</strong>, a Full Stack Developer focused on creating solutions that combine performance, design, and user experience.
+          </p>
+
+          <p>
+            I enjoy working on challenging projects that help me grow both technically and creatively. I believe well-written code should be easy to understand, maintain, and improve.
+          </p>
+
+          <p>
+            Outside the keyboard, I enjoy exploring new technologies, contributing to open-source projects, and always pushing myself to the next level.
+          </p>
+
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+  <section class="container">
+     <div class="sobre-cards">
+
+        <div class="row" style="display: flex !important;">
+            <div class="col-md-4">
+                <div class="info-card">
+                    <span class="info-label">Full Name</span>
+                    <span class="info-value">Kauã Felipe Gomes Medeiros</span>
+                </div>
+             </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <span class="info-label">Birth Date</span>
+                    <span class="info-value" id="dataNascimento">18/08/2008</span>
+                </div>
+            </div>
+              <div class="col-md-4">
+                <div class="info-card">
+                    <span class="info-label">Email </span>
+                    <span class="info-value" id="email">kauafgm18@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: flex !important;">
+            
+            <div class="col-md-4">
+                <div class="info-card">
+                    <span class="info-label">contact number</span>
+                    <span class="info-value" id="dataNascimento">+55 (88) 9 9334-8990</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <span class="info-label">Age</span>
+                    <span class="info-value" id="idadeCalc">17 years old</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                   <div class="info-card">
+                        <span class="info-label">Location</span>
+                        <span class="info-value">Sobral / Ceará</span>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <br>
+       <hr>
+        <br>
+        <br>
+         <div class="row" style="display: flex !important;justify-content: center;">
+            
+            <div class="col-md-6" style="padding-right: 10px;">
+                 <div class="info-card">
+                    <span class="info-label">Availability</span>
+                    <span class="info-value disponivel">✦ Available for projects</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                   <div class="info-card">
+                        <span class="info-label">Current Focus</span>
+                        <span class="info-value">Web Development</span>
+                    </div>
+            </div>
+        </div>
+        
+         
+
+          
+
+          </div>
+
+        
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="habilidades" id="habilidades">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">// skills</span>
+        <h2 class="section-title">What I Do Best</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⟨/⟩</span> Front-End
+          </h3>
+
+          <div class="skill-list">
+
+            <div class="skill-item" data-level="90">
+              <span class="skill-name">HTML5 / CSS3</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-percent">90%</span>
+            </div>
+
+            <div class="skill-item" data-level="85">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⚙</span> Back-End
+          </h3>
+
+          <div class="skill-list">
+
+            <div class="skill-item" data-level="80">
+              <span class="skill-name">PHP</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+
+            <div class="skill-item" data-level="80">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+              <span class="skill-percent">40%</span>
+            </div>
+
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-percent">75%</span>
+            </div>
+
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+              <span class="skill-percent">40%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🗄</span> Databases
+          </h3>
+
+          <div class="skill-list">
+
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+              <span class="skill-percent">60%</span>
+            </div>
+
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">MySQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+
+            <div class="skill-item" data-level="65">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+              <span class="skill-percent">50%</span>
+            </div>
+
+          </div>
+        </div>
+
+         <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⚙</span> Frameworks
+          </h3>
+
+          <div class="skill-list">
+
+            <div class="skill-item" data-level="80">
+              <span class="skill-name">Codeigniter</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-percent">75%</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🛠</span> Tools
+          </h3>
+
+          <div class="skill-list">
+
+            <div class="skill-item" data-level="85">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-percent">85%</span>
+            </div>
+
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="30"></div></div>
+              <span class="skill-percent">30%</span>
+            </div>
+
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">Linux / Terminal</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-percent">75%</span>
+            </div>
+
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-tags">
+        <span class="tech-tag">Php | </span>
+        <span class="tech-tag">JavaScript | </span>
+        <span class="tech-tag">Html and Css | </span>
+        <span class="tech-tag">Node.js | </span>
+        <span class="tech-tag">Python | </span>
+        <span class="tech-tag">C# | </span>
+        <span class="tech-tag">Mysql | </span>
+        <span class="tech-tag">AWS | </span>
+        <span class="tech-tag">Figma </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projetos" id="projetos">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">// projects</span>
+        <h2 class="section-title">What I Have Built</h2>
+      </div>
+
+      <div class="projetos-grid">
+
+        <article class="projeto-card">
+
+          <div class="projeto-img">
+            <div class="projeto-placeholder">01</div>
+          </div>
+
+          <div class="projeto-body">
+
+            <div class="projeto-tags">
+              <span>PHP | </span>
+              <span>CodeIgniter | </span>
+              <span>MySQL | </span>
+              <span>JavaScript | </span>
+            </div>
+
+            <h3 class="projeto-title">
+              Quanto Tá? Ltda — Company Manager (Developing)
+            </h3>
+
+            <p class="projeto-desc">
+              A business management tool focused on sales, designed to simplify administrative processes and improve company organization.
+            </p>
+
+            <div class="projeto-links">
+              <a href="#" class="proj-link">Website not available yet.</a>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="projeto-card">
+
+          <div class="projeto-img">
+            <div class="projeto-placeholder">02</div>
+          </div>
+
+          <div class="projeto-body">
+
+            <div class="projeto-tags">
+              <span>PHP | </span>
+              <span>CodeIgniter | </span>
+              <span>MySQL | </span>
+              <span>JavaScript | </span>
+            </div>
+
+            <h3 class="projeto-title">
+              Vitta+ — Medical Management System (Developing)
+            </h3>
+
+            <p class="projeto-desc">
+              A clinic management application focused on reducing operational errors and improving healthcare business organization.
+            </p>
+
+            <div class="projeto-links">
+              <a href="#" class="proj-link">Website not available yet.</a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+
+      <p class="footer-copy">
+        Developed by <strong>Kauã Felipe Gomes Medeiros</strong> &mdash;
+        <span id="footerYear"></span>
+      </p>
+
+      <p class="footer-stack">
+        HTML · CSS · JavaScript
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="portifolio.js"></script>
+</body>
+</html>
